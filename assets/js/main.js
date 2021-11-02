@@ -169,8 +169,8 @@
 									$footer.hide();
 
 								// Show main, article.
-									$main.show();
-									$article.show();
+									$main.hide();
+									$article.hide();
 
 								// Activate article.
 									setTimeout(function() {
