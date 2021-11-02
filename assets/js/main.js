@@ -70,9 +70,9 @@
 			locked = false;
 
 		// Methods.
-			$main._hide = function(id, initial) {
+			$main._block = function(id, initial) {
 
-				var $article = $main_articles.filter('#' + id);
+				var $article = $main_articles.filter();
 
 				// No such article? Bail.
 					if ($article.length == 0)
