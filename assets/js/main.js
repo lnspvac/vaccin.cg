@@ -1,7 +1,5 @@
 /*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Dimension by RDS
 */
 
 (function($) {
@@ -72,7 +70,7 @@
 		// Methods.
 			$main._block = function(id, initial) {
 
-				var $article = $main_articles.filter();
+				var $article = $main_articles.filter('#' + id);
 
 				// No such article? Bail.
 					if ($article.length == 0)
@@ -87,7 +85,7 @@
 								$body.addClass('is-switching');
 
 							// Mark as visible.
-								$body.addClass('is-article-visible');
+								$body.addClass('is-article-invisible');
 
 							// Deactivate all articles (just in case one's already active).
 								$main_articles.removeClass('active');
