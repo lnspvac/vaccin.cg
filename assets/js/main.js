@@ -65,7 +65,7 @@
 
 	// Main.
 		var	delay = 325,
-			locked = false;
+			locked = true;
 
 		// Methods.
 			$main._block = function(id, initial) {
@@ -85,7 +85,7 @@
 								$body.addClass('is-switching');
 
 							// Mark as visible.
-								$body.addClass('is-article-invisible');
+								$body.addClass('is-article-visible');
 
 							// Deactivate all articles (just in case one's already active).
 								$main_articles.removeClass('active');
@@ -169,8 +169,8 @@
 									$footer.hide();
 
 								// Show main, article.
-									$main.hide();
-									$article.hide();
+									$main.show();
+									$article.show();
 
 								// Activate article.
 									setTimeout(function() {
