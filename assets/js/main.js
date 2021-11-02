@@ -65,10 +65,10 @@
 
 	// Main.
 		var	delay = 325,
-			locked = true;
+			locked = false;
 
 		// Methods.
-			$main._close = function(id, initial) {
+			$main._hide = function(id, initial) {
 
 				var $article = $main_articles.filter('#' + id);
 
