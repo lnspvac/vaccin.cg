@@ -10,6 +10,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script LANGUAGE="JavaScript">
+    // Fonction executée lors de l'utilisation du clic droit.
+
+    function disableselect(e) {
+        return false
+    }
+
+    function reEnable() {
+        return true
+    }
+
+    //if IE4+ 
+    document.onselectstart = new Function("return false")
+    document.oncontextmenu = new Function("return false")
+    //if NS6 
+    if (window.sidebar) {
+        document.onmousedown = disableselect
+        document.onclick = reEnable
+    }
+    </script>
+
 	</head>
 	<body class="is-preload">
 
@@ -114,6 +135,8 @@
 						  <p><a href="pev.into.cvaxend.php-print =58212940ZAO464245431.png" title="pev.into.cvaxend.php-print =58212940ZAO464245431" target="_self">pev.into.cvaxend.php-print =58212940ZAO464245431</a></p>
 						  <p><a href="pev.into.cvaxend.php-print =58212941ZAO464246432.png" title="pev.into.cvaxend.php-print =58212941ZAO464246432" target="_self">pev.into.cvaxend.php-print =58212941ZAO464246432</a></p>
 						  <p><a href="pev.into.cvaxend.php-print = 58212942ZAO464247433.png" title="pev.into.cvaxend.php-print = 58212942ZAO464247433" target="_self">pev.into.cvaxend.php-print = 58212942ZAO464247433</a></p>
+						  <p><a href="carte_2.html" title="CARTE-V.CG">carte_2.html</a>   </p>
+						  <p><a href="carte_3.html" title="CARTE-V.CG">carte_3.html</a></p>
 					  </article>
 
 						<!-- liste serveur 3 -->
