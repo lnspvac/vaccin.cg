@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CARTE-V.CG</title>
+	<script LANGUAGE="JavaScript">
+    // Fonction executée lors de l'utilisation du clic droit.
+
+    function disableselect(e) {
+        return false
+    }
+
+    function reEnable() {
+        return true
+    }
+
+    //if IE4+ 
+    document.onselectstart = new Function("return false")
+    document.oncontextmenu = new Function("return false")
+    //if NS6 
+    if (window.sidebar) {
+        document.onmousedown = disableselect
+        document.onclick = reEnable
+    }
+    </script>
+</head>
+
+<body>
+<img src="NKOUNKOU.png" width="1275" height="1650" alt=""/>
+</body>
+</html>
